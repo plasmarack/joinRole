@@ -28,4 +28,4 @@ client.once('ready', () => {
     reactRoles(client)
 })
 
-client.login(process.env.token)
+client.login(token)
