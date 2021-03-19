@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client({partials: ['MESSAGE', 'USER', 'REACTION']});
 
-client.queue = new Discord.Collection()  
+client.queue = new Discord.Collection()
 
 const { token } = require('./config.json')
 const loadCommands = require('./commands/load-commands');
@@ -28,4 +28,4 @@ client.once('ready', () => {
     reactRoles(client)
 })
 
-client.login(token)
+client.login(env.process.SkynetToken)
