@@ -28,4 +28,4 @@ client.once('ready', () => {
     reactRoles(client)
 })
 
-client.login(env.process.SkynetToken)
+client.login(process.env.SkynetToken)
