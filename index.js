@@ -8,7 +8,8 @@ const loadCommands = require('./commands/load-commands');
 const EditMessage = require('./utils/EditMessage');
 const setup = require('./commands/Reaction-Roles/setup');
 const reactRoles = require('./commands/Reaction-Roles/react-roles');
-
+const setup2 = require('./commands/Verify/setup');
+const reactRoles2 = require('./commands/Verify/react-roles');
 
 client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
@@ -26,6 +27,8 @@ client.once('ready', () => {
 
     setup(client)
     reactRoles(client)
+    setup2(client)
+    reactRoles2(client)
 })
 
 client.login(process.env.SkynetToken)
