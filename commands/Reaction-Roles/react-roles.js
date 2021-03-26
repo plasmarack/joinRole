@@ -14,6 +14,9 @@ module.exports = (client) => {
         if(reaction.message.id === reactionrole && reaction.emoji.name === 'SCPSL') { // Your Emoji Name
             await reaction.message.guild.members.cache.get(user.id).roles.add('821953538229403688') // Role You Want To Add When SomeOne Reacts
         }
+        if(reaction.message.id === reactionrole && reaction.emoji.name === 'pinged') { // Your Emoji Name
+            await reaction.message.guild.members.cache.get(user.id).roles.add('825148717861437450') // Role You Want To Add When SomeOne Reacts
+        }
     })
 
     // Removing Roles When Reacted
@@ -29,6 +32,9 @@ module.exports = (client) => {
         }
         if(reaction.message.id === reactionrole && reaction.emoji.name === 'SCPSL') { // Your Emoji Name
             await reaction.message.guild.members.cache.get(user.id).roles.remove('821953538229403688') // Role You Want To Remove When SomeOne Reacts(Should Be Same As Add One As Above)
+        }
+        if(reaction.message.id === reactionrole && reaction.emoji.name === 'pinged') { // Your Emoji Name
+            await reaction.message.guild.members.cache.get(user.id).roles.remove('825148717861437450') // Role You Want To Remove When SomeOne Reacts(Should Be Same As Add One As Above)
         }
     })
 
