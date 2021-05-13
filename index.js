@@ -17,8 +17,8 @@ const AetherSetup = require('./commands/Aether-React-Role/setup');
 client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setStatus('Online')
-    const wiggy = client.user.cache.get('292138463854067722')
-    wiggy.send("We Probably updated, But we online so gl.");
+    client.user.setActivity("Fornite Burgers", { type: "WATCHING"})
+
 
     setInterval(() => {
         const statuses = [
