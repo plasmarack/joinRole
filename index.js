@@ -17,7 +17,7 @@ const AetherSetup = require('./commands/Aether-React-Role/setup');
 client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setStatus('Online')
-    client.users.cache.get("292138463854067722").send("We Probably updated, But we online so gl.");
+    client.channels.cache.get('292138463854067722').send("We Probably updated, But we online so gl.");
 
     setInterval(() => {
         const statuses = [
