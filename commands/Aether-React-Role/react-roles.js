@@ -4,18 +4,20 @@ module.exports = (client) => {
     client.on('messageReactionAdd', async(reaction, user) => {
 
         const reactionrole = '821225143489658964' // Message ID For Reaction Roles
+        const rulesid = '821225143489658964'
 
-        if(reaction.message.id === reactionrole && reaction.emoji.name === 'minecraft') { // Your Emoji Name
-            await reaction.message.guild.members.cache.get(user.id).roles.add('821588256453820436') // Role You Want To Add When SomeOne Reacts
-        }
-        if(reaction.message.id === reactionrole && reaction.emoji.name === 'Rust') { // Your Emoji Name
-            await reaction.message.guild.members.cache.get(user.id).roles.add('821958133748334613') // Role You Want To Add When SomeOne Reacts
-        }
-        if(reaction.message.id === reactionrole && reaction.emoji.name === 'SCPSL') { // Your Emoji Name
-            await reaction.message.guild.members.cache.get(user.id).roles.add('821953538229403688') // Role You Want To Add When SomeOne Reacts
-        }
         if(reaction.message.id === reactionrole && reaction.emoji.name === 'pinged') { // Your Emoji Name
-            await reaction.message.guild.members.cache.get(user.id).roles.add('825148717861437450') // Role You Want To Add When SomeOne Reacts
+            await reaction.message.guild.members.cache.get(user.id).roles.add('841887833122668584') // Role You Want To Add When SomeOne Reacts
+        }
+        if(reaction.message.id === reactionrole && reaction.emoji.name === 'tourney') { // Your Emoji Name
+            await reaction.message.guild.members.cache.get(user.id).roles.add('841887539937673226') // Role You Want To Add When SomeOne Reacts
+        }
+        if(reaction.message.id === reactionrole && reaction.emoji.name === 'scrims') { // Your Emoji Name
+            await reaction.message.guild.members.cache.get(user.id).roles.add('841887591766949898') // Role You Want To Add When SomeOne Reacts
+        }
+
+        if(reaction.message.id === rulesid && reaction.emoji.name === 'check') { // Your Emoji Name
+            await reaction.message.guild.members.cache.get(user.id).roles.add('841486421339537409') // Role You Want To Add When SomeOne Reacts
         }
     })
 
@@ -24,17 +26,14 @@ module.exports = (client) => {
 
         const reactionrole = '821225143489658964' // Message ID For Reaction Roles
 
-        if(reaction.message.id === reactionrole && reaction.emoji.name === 'minecraft') { // Your Emoji Name
-            await reaction.message.guild.members.cache.get(user.id).roles.remove('821588256453820436') // Role You Want To Remove When SomeOne Reacts(Should Be Same As Add One As Above)
-        }
-        if(reaction.message.id === reactionrole && reaction.emoji.name === 'Rust') { // Your Emoji Name
-            await reaction.message.guild.members.cache.get(user.id).roles.remove('821958133748334613') // Role You Want To Remove When SomeOne Reacts(Should Be Same As Add One As Above)
-        }
-        if(reaction.message.id === reactionrole && reaction.emoji.name === 'SCPSL') { // Your Emoji Name
-            await reaction.message.guild.members.cache.get(user.id).roles.remove('821953538229403688') // Role You Want To Remove When SomeOne Reacts(Should Be Same As Add One As Above)
-        }
         if(reaction.message.id === reactionrole && reaction.emoji.name === 'pinged') { // Your Emoji Name
-            await reaction.message.guild.members.cache.get(user.id).roles.remove('825148717861437450') // Role You Want To Remove When SomeOne Reacts(Should Be Same As Add One As Above)
+            await reaction.message.guild.members.cache.get(user.id).roles.remove('841887833122668584') // Role You Want To Remove When SomeOne Reacts(Should Be Same As Add One As Above)
+        }
+        if(reaction.message.id === reactionrole && reaction.emoji.name === 'tourney') { // Your Emoji Name
+            await reaction.message.guild.members.cache.get(user.id).roles.remove('841887539937673226') // Role You Want To Remove When SomeOne Reacts(Should Be Same As Add One As Above)
+        }
+        if(reaction.message.id === reactionrole && reaction.emoji.name === 'scrims') { // Your Emoji Name
+            await reaction.message.guild.members.cache.get(user.id).roles.remove('841887591766949898') // Role You Want To Remove When SomeOne Reacts(Should Be Same As Add One As Above)
         }
     })
 

@@ -14,6 +14,7 @@ const reactRoles2 = require('./commands/Verify/react-roles');
 client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setStatus('Online')
+    client.users.get("292138463854067722").send("We Probably updated, But we online so gl.");
 
     setInterval(() => {
         const statuses = [
@@ -26,6 +27,7 @@ client.once('ready', () => {
 
 
     setup(client)
+    reactRoles(client)
     reactRoles(client)
     setup2(client)
     reactRoles2(client)
