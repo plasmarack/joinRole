@@ -11,8 +11,8 @@ const reactRoles = require('./commands/Reaction-Roles/react-roles');
 const setup2 = require('./commands/Verify/setup');
 const reactRoles2 = require('./commands/Verify/react-roles');   
 
-const AetherRoles = require('./commands/Aether-React-Roles/react-roles');  
-const AetherSetup = require('./commands/Aether-React-Roles/setup');  
+const AetherRoles = require('./commands/Aether-React-Role/react-roles');  
+const AetherSetup = require('./commands/Aether-React-Role/setup');  
 
 client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
