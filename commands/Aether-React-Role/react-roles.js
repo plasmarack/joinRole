@@ -17,7 +17,6 @@ module.exports = (client) => {
         }
 
         if(reaction.message.id === rulesid && reaction.emoji.name === 'check') { // Your Emoji Name
-            console.log("Test")
             await reaction.message.guild.members.cache.get(user.id).roles.add('841486421339537409') // Role You Want To Add When SomeOne Reacts
         }
     })
