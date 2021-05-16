@@ -63,7 +63,6 @@ module.exports = (client) => {
     value: 'Staff members always have final say in situations where a punishment is involved or being told to do something (within our games).'}
   )
 
-`)
     .setFooter('If you agree to the rules, Please react below.')
     , ['<:check:842221380060708886>'] // Your Emojis
     )
