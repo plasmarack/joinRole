@@ -12,7 +12,7 @@ module.exports = (client) => {
     , ['<:pinged:842220090727858225>','<:tourney:842219931192918036','<:scrims:842219467961401364>'] // Your Emojis
     )
 
-    EditMessage(client, '842227676189032470', new MessageEmbed() // Your Channel ID
+    EditMessage(client, '841487761588224060', new MessageEmbed() // Your Channel ID
     .setTitle('Rules')
     .setColor('RED')
     .setDescription(`The following rules are to be followed at all times during your time within our server. Breaking any of the rules may result in a warning, followed by a kick or ban depending on the severity of the issue.
