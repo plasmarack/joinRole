@@ -10,7 +10,7 @@ const joinRole = require('./commands/joinRole/joinRole');
 client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setStatus('Online')
-    client.user.setActivity("Status Here", { type: null} )
+    client.user.setActivity("pathfinderhosting" )
 
 
     //setInterval(() => {
