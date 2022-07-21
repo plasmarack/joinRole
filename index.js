@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client({partials: ['MESSAGE', 'USER', 'REACTION']});
+const cfg = required('./config.json');
 
 client.queue = new Discord.Collection()
 const loadCommands = require('./commands/load-commands');
@@ -28,4 +29,4 @@ client.once('ready', () => {
     joinRole(client)
 })
 
-client.login("OTk5NTA5NjQzNDIyMzUxMzgw.G1I43F.m7zQDFpAu9JqIKoG8--v7l1NS-hzBVV8WyfOKI")
+client.login(cfg.tkn)
