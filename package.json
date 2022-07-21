@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"worker": "node index.js"
+    "worker": "node index.js"
   },
   "author": "TTC",
   "license": "ISC",
   "dependencies": {
     "@discordjs/opus": "^0.3.3",
     "@distube/ytpl": "^1.0.10",
-    "discord.js": "^12.5.1",
+    "discord.js": "^12.5.3",
     "ffmpeg": "0.0.4",
     "ffmpeg-static": "^4.2.7",
     "moment": "^2.29.1",

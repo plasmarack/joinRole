@@ -2,40 +2,30 @@ const Discord = require('discord.js');
 const client = new Discord.Client({partials: ['MESSAGE', 'USER', 'REACTION']});
 
 client.queue = new Discord.Collection()
-
-const { token } = require('./config.json')
 const loadCommands = require('./commands/load-commands');
-const EditMessage = require('./utils/EditMessage');
-const setup = require('./commands/Reaction-Roles/setup');
-const reactRoles = require('./commands/Reaction-Roles/react-roles');
-const setup2 = require('./commands/Verify/setup');
-const reactRoles2 = require('./commands/Verify/react-roles');   
 
-const AetherRoles = require('./commands/Aether-React-Role/react-roles');  
-const AetherSetup = require('./commands/Aether-React-Role/setup');  
+const joinRole = require('./commands/joinRole/joinRole');
 
 client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setStatus('Online')
-    client.user.setActivity("Fornite Burgers", { type: "WATCHING"})
+    client.user.setActivity("Status Here", { type: null} )
 
 
-    setInterval(() => {
-        const statuses = [
-            `over you`,
-        ]
+    //setInterval(() => {
+        //const statuses = [
+            //`Helping Users`,
+            //`pathfinderhosting.net`,
+            //`Providing Support For All`,
+            //`SoonTM`,
+        //]
 
-        const status = statuses[Math.floor(Math.random() * statuses.length)]
-        client.user.setActivity(status, { type: "WATCHING"}) // Can Be WATCHING, STREAMING, LISTENING
-    }, 2000) // Second You Want to Change Status, This Cahnges Every 2 Seconds
+        //const status = statuses[Math.floor(Math.random() * statuses.length)]
+        //client.user.setActivity(status, { type: "WATCHING"}) // Can Be WATCHING, STREAMING, LISTENING
+    //}, 2000) // Second You Want to Change Status, This Cahnges Every 2 Seconds
 
 
-    setup(client)
-    reactRoles(client)
-    AetherRoles(client)
-    AetherSetup(client)
-    setup2(client)
-    reactRoles2(client)
+    joinRole(client)
 })
 
-client.login(process.env.SkynetToken)
+client.login("OTk5NTA5NjQzNDIyMzUxMzgw.G1I43F.m7zQDFpAu9JqIKoG8--v7l1NS-hzBVV8WyfOKI")
